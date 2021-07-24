@@ -1,0 +1,26 @@
+@import "../utils/variables";
+@import "./typography";
+
+*,*::after,*::before{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	// border: 1px solid black; 
+	transition: 0.3s ease;
+}
+
+a{
+	color: inherit;
+	list-style: none;
+	text-decoration: none;
+}
+section{
+     min-height: 50vh;
+}
+a.no-clout{
+     color: inherit;
+     text-decoration: inherit;
+     transform: scale(0.95);
+     height: 250px;
+     padding: 20px;
+}

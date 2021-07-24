@@ -1,0 +1,20 @@
+@import "../base/reset";
+
+
+header{
+     height: 75px;
+     position:fixed;
+     z-index:10;
+     width: 100vw;
+     background: #202020f0;
+     margin-top: -10px;
+     #menuZone{
+          display: flex;
+          align-items: center;
+          font-weight: bold;
+          color: #f0f0f0;
+     }
+     &:hover{
+          background:#202020fa
+     }
+}

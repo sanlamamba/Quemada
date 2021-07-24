@@ -1,0 +1,21 @@
+@import "../base/reset";
+
+.button{
+     min-width: 200px;
+     font-size: 18px;
+     margin: 20px;
+     padding: 10px;
+     border-radius: 10px;
+     color: $bg-color;
+     .btn-one{
+          bottom: 0;
+          background: transparent;
+          color: black;
+          font-weight:bold;
+     }
+     .filtersBtn{
+          min-width: 100px;
+     }
+
+}
+

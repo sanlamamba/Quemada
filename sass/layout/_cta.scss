@@ -1,0 +1,12 @@
+.spacer{
+     height: 75px;
+}
+breadcrumb{
+     padding: 10px;
+     display: flex;
+     opacity: 0.6;
+     &>*{
+          padding:2px 10px;
+     }
+     
+}

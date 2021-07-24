@@ -1,0 +1,50 @@
+.home{
+     #slider{
+          height: 90vh;
+          background-image: url("../images/slide-02.jpg");
+          background-position: center center;
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          div{
+               h1{
+                    font-weight: bold;
+               }
+               h4{
+                    padding: 5px 20px;
+               }
+          }
+     }
+    
+     
+}
+#categoryGrid{
+     padding: 20px 50px;
+     .row{
+          a{
+               border: 1px solid #20202030;
+               button{
+                    margin-top: 30%;
+               }
+               background-position: center center;
+               background-size: cover;
+               background-repeat: no-repeat;
+          }
+          
+          #hommeCat{
+               background-image: url("../images/banner-02.jpg");
+          }
+          #femmeCat{
+               background-image: url("../images/banner-01.jpg");
+          }
+          #accesoireCat{
+               background-image: url("../images/banner-03.jpg");
+          }
+
+          a{
+               backdrop-filter: grayscale(0.5) opacity(0.8);
+          }
+     }
+     
+
+}
