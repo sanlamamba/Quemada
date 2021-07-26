@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="./css/bootstrap.css">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 
-	<!-- <link rel="stylesheet" href="./style/main.css"> -->
+	<link rel="stylesheet" href="./style/main.css">
 
 </head>
 <?php

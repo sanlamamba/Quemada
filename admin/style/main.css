@@ -1,41 +1,9 @@
-/* Colors */
-/* Typography */
-/* Fonts */
+
 *, *::after, *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  border: 1px solid black;
-  transition: 0.3s ease;
-}
-
-a {
-  color: inherit;
-  list-style: none;
-  text-decoration: none;
-}
-
-section {
-  min-height: 50vh;
-}
-
-a.no-clout {
-  color: inherit;
-  text-decoration: inherit;
-  transform: scale(0.95);
-  height: 250px;
-  padding: 20px;
-}
-
-/* Fonts */
-/* Colors */
-/* Typography */
-/* Fonts */
-*, *::after, *::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   transition: 0.3s ease;
 }
 
@@ -134,23 +102,6 @@ footer, .copyright {
   text-align: center;
 }
 
-/* Colors */
-/* Typography */
-/* Fonts */
-*, *::after, *::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  border: 1px solid black;
-  transition: 0.3s ease;
-}
-
-a {
-  color: inherit;
-  list-style: none;
-  text-decoration: none;
-}
-
 section {
   min-height: 50vh;
 }
@@ -176,33 +127,10 @@ header #menuZone {
   font-weight: bold;
   color: #f0f0f0;
 }
-/* Colors */
-/* Typography */
-/* Fonts */
-*, *::after, *::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  border: 1px solid black;
-  transition: 0.3s ease;
-}
 
-a {
-  color: inherit;
-  list-style: none;
-  text-decoration: none;
-}
 
 section {
   min-height: 50vh;
-}
-
-a.no-clout {
-  color: inherit;
-  text-decoration: inherit;
-  transform: scale(0.95);
-  height: 250px;
-  padding: 20px;
 }
 
 #adminContainer {
@@ -214,6 +142,11 @@ a.no-clout {
 
 #adminContainer #adminScreen {
   overflow-y: scroll;
+  padding: 20px;
+}
+.adminMenu{
+  background-color: #202020;
+  color: white;
 }
 
 .container div .aboutImg img {

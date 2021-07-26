@@ -8,13 +8,13 @@
                <!-- PRODUIT -->
                <a href="./liste_produit.php" class="row">
                     <div class="col-2">
-                         i
+                         >
                     </div>
                     <li class='col'>Liste produit</li>
                </a>
                <a href="./ajouter_produit.php" class="row">
                     <div class="col-2">
-                         i
+                         >
                     </div>
                     <li class='col'>ajouter un produit</li>
                </a>
@@ -34,7 +34,7 @@
                <!-- COMMANDE -->
                <a href="./liste_commande.php" class="row">
                     <div class="col-2">
-                         i
+                         >
                     </div>
                     <li class='col'>Liste des commade</li>
                </a>
@@ -43,7 +43,7 @@
                <!-- CLIENT -->
                <a href="./liste_client.php" class="row">
                     <div class="col-2">
-                         i
+                         >
                     </div>
                     <li class='col'>Annuaire Clients</li>
                </a>
