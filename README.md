@@ -23,6 +23,7 @@ Ce  service E-commerce est est destiné à différent publics   de  diverses  â
 
 
 #### Lire plus en telechargeant notre documentation technique:
-
+[DOCUMENTATION TECHNIQUE QUEMADA.pdf](https://github.com/slamamba/Quemada/files/6885515/DOCUMENTATION.TECHNIQUE.QUEMADA.pdf)
 
 #### Lire plus en telechargeant notre guide utilisateur:
+[GUIDE UTILISATEUR QUEMADA.pdf](https://github.com/slamamba/Quemada/files/6885518/GUIDE.UTILISATEUR.QUEMADA.pdf)
