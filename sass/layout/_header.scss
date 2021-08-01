@@ -3,18 +3,41 @@
 
 header{
      height: 75px;
-     position:fixed;
+     position: static;
      z-index:10;
      width: 100vw;
-     background: #202020f0;
      margin-top: -10px;
+     transform: translateY(0%);
+     background-color: $bg-color;
+     color: $inverse-bg;
+     opacity: 1;
+     transition: 0.6s ease-in;
+     
      #menuZone{
           display: flex;
           align-items: center;
           font-weight: bold;
-          color: #f0f0f0;
+          
      }
      &:hover{
-          background:#202020fa
+          background:$inverse-bg;
+          color: $bg-color;
      }
+     &.headerTwo{
+          transform: translateY(-30%);
+          position: fixed;
+          align-items: end;
+          padding: 10px 0px;
+          opacity: 0.5;
+          .account{
+               transform: scale(0.7);
+          }
+          &.active{
+               transform: translateY(0%);
+               align-items: center;
+               opacity: 0.9;
+
+          }
+     }
+     
 }

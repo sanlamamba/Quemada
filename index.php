@@ -3,7 +3,7 @@
 <?php
 	include("./components/head.php")
 ?>
-<body>
+<body id="cont">
 	<div id="mainContainer" class="container-fluid">
 		<!-- HEADER -->
 		<?php
@@ -11,7 +11,7 @@
 		?>
 
 		<!-- CONTENT -->
-		<section class="container-fluid home">
+		<section id="home" class="container-fluid">
 			<!-- SLIDER -->
 			<div id="slider" class="col-12">
 				<div class="row container">
@@ -28,17 +28,17 @@
 		<div class="row spacer"></div>
 		<div id="categoryGrid">
 			<div class="row">
-				<a href="#" id="hommeCat" class="col-sm-6 col-md-4 no-clout">
+				<a href="./boutique.php?filtre=ordinateur" id="hommeCat" class="col-sm-6 col-md-4 no-clout">
 					<h3>Ordinateur</h3>
 					<h6>80+</h6>
 					<button class="btn btn-one">Voir tout</button>
 				</a>
-				<a href="#" id="femmeCat" class="col-sm-6 col-md-4 no-clout">
+				<a href="./boutique.php?filtre=telephone" id="femmeCat" class="col-sm-6 col-md-4 no-clout">
 					<h3>Telephone</h3>
 					<h6>90+</h6>
 					<button class="btn btn-one">Voir tout</button>
 				</a>
-				<a href="#" id="accesoireCat" class="col-sm-6 col-md-4 no-clout">
+				<a href="./boutique.php?filtre=accessoire" id="accesoireCat" class="col-sm-6 col-md-4 no-clout">
 					<h3>Accessoire</h3>
 					<h6>250+</h6>
 					<button class="btn btn-one">Voir tout</button>
@@ -72,7 +72,6 @@
 			include("./components/footer.php")
 		?>
 	</div>
-	<script src="./js/header.js"></script>
 
 </body>
 </html>

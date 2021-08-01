@@ -26,6 +26,18 @@ a.no-clout {
   padding: 20px;
 }
 
+a:hover {
+  color: #647DEE;
+  text-decoration: none;
+}
+
+#mainContainer {
+  overflow-y: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 /* Fonts */
 /* Colors */
 /* Typography */
@@ -53,6 +65,18 @@ a.no-clout {
   transform: scale(0.95);
   height: 250px;
   padding: 20px;
+}
+
+a:hover {
+  color: #647DEE;
+  text-decoration: none;
+}
+
+#mainContainer {
+  overflow-y: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 .button {
@@ -130,6 +154,11 @@ footer, .copyright {
   text-align: center;
 }
 
+footer .f-menu {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Colors */
 /* Typography */
 /* Fonts */
@@ -158,22 +187,53 @@ a.no-clout {
   padding: 20px;
 }
 
+a:hover {
+  color: #647DEE;
+  text-decoration: none;
+}
+
+#mainContainer {
+  overflow-y: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 header {
   height: 75px;
-  position: fixed;
+  position: static;
   z-index: 10;
   width: 100vw;
-  background: #202020f0;
   margin-top: -10px;
+  transform: translateY(0%);
+  background-color: #fcfcfc;
+  color: #202020;
+  opacity: 1;
+  transition: 0.6s ease-in;
 }
 header #menuZone {
   display: flex;
   align-items: center;
   font-weight: bold;
-  color: #f0f0f0;
 }
 header:hover {
-  background: #202020fa;
+  background: #202020;
+  color: #fcfcfc;
+}
+header.headerTwo {
+  transform: translateY(-30%);
+  position: fixed;
+  align-items: end;
+  padding: 10px 0px;
+  opacity: 0.5;
+}
+header.headerTwo .account {
+  transform: scale(0.7);
+}
+header.headerTwo.active {
+  transform: translateY(0%);
+  align-items: center;
+  opacity: 0.9;
 }
 
 /* Colors */
@@ -204,19 +264,34 @@ a.no-clout {
   padding: 20px;
 }
 
-.home #slider {
+a:hover {
+  color: #647DEE;
+  text-decoration: none;
+}
+
+#mainContainer {
+  overflow-y: scroll;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+#home #slider {
   height: 90vh;
   background-image: url("../images/slide-02.jpg");
   background-position: center center;
   background-size: cover;
   display: flex;
   align-items: center;
+  color: white;
 }
-.home #slider div h1 {
+#home #slider div h1 {
   font-weight: bold;
+  color: white;
 }
-.home #slider div h4 {
+#home #slider div h4 {
   padding: 5px 20px;
+  color: white;
 }
 
 #categoryGrid {

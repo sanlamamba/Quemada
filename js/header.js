@@ -1,19 +1,22 @@
 const header =document.querySelector('header');
-
 const headerAnim = (scrollPos)=>{
-     if(scrollPos >= 80){
-          header.style.transform = "translateY(-50%)";
-          header.setAttribute('class','headerTwo colorHeader');
+     if(scrollPos > 80){
+          header.setAttribute('class','row headerTwo');
      }else if(scrollPos < 80){
-          header.style.transform = "translateY(0%)";
-          header.setAttribute('class','mainHeader');
+          header.setAttribute('class','row mainHeader');
      }
-     positionY = scrollPos;
 }
 
 const mainWindow = document.getElementById("mainContainer");
 mainWindow.addEventListener('scroll',e=>{
+     console.log(e.target.scrollTop);
      const scrollPos = e.target.scrollTop;
      headerAnim(scrollPos);
      
 })
+header.addEventListener("mouseenter",e=>{
+     header.setAttribute('class','row headerTwo active');
+
+})
+
+console.log(mainWindow);

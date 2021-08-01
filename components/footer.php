@@ -11,30 +11,30 @@
                          Pour tous et a un prix abordable a tous.
                          Numero #1 au Senegal</a>
                </div>
-               <div class="col-sm-12 col-md-3">
+               <div class="col-sm-12 f-menu col-md-3">
                     <h5 class="row">
                          Categorie
                     </h5>
-                    <a>Homme</a>
-                    <a>Femme</a>
-                    <a>Accesoire</a>
+                    <a href="./boutique.php?filtre=ordinateur">Ordinateur</a>
+                    <a href="./boutique.php?filtre=telephone">Telephone</a>
+                    <a href="./boutique.php?filtre=accessoire">Accesoire</a>
                </div>
                
-               <div class="col-sm-12 col-md-3">
+               <div class="col-sm-12 f-menu col-md-3">
                     <h5 class="row">
                          Information
                     </h5>
-                    <a>Compte</a>
-                    <a>Commande</a>
-                    <a>Panier</a>
+                    <a href="./authentification.php">Compte</a>
+                    <a href="./authentification.php">Commande</a>
+                    <a href="./panier.php">Panier</a>
                </div>
-               <div class="col-sm-12 col-md-3">
+               <div class="col-sm-12 f-menu col-md-3">
                     <h5 class="row">
                          Contact
                     </h5>
-                    <a>+221 33 265 48 12</a>
-                    <a>contact@quemada.com</a>
-                    <a><a href="#">Nous contacter</a></a>
+                    <a href="tel:+221332654812">+221 33 265 48 12</a>
+                    <a href="mailto:contact@quemada.com">contact@quemada.com</a>
+                    <a href="./contact.php"><label class="btn btn-dark m-2">Nous contacter</label></a>
                </div>
                
           </div>

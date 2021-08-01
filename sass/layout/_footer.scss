@@ -2,6 +2,7 @@ footer,.copyright{
      padding: 70px 0px;
      background: #202020;
      color: azure;
+     
 }
 .copyright{
      border-top: 2px solid white;
@@ -9,4 +10,10 @@ footer,.copyright{
           text-align: center;
      }
      padding: 5px 0px;
+}
+footer{
+     .f-menu{
+          display: flex;
+          flex-direction: column;
+     }
 }

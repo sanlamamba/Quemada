@@ -24,3 +24,13 @@ a.no-clout{
      height: 250px;
      padding: 20px;
 }
+a:hover{
+	color: $primary-color;
+	text-decoration: none;
+}
+#mainContainer{
+	overflow-y: scroll;
+	height: 100vh;
+	overflow-x: hidden;
+	width: 100vw;
+}

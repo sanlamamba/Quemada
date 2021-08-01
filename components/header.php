@@ -13,9 +13,9 @@
           <a href="./authentification.php" class='col'>
                <?php
                     if(isset($_SESSION['nom'])){
-                         echo "Bienvenu, ". $_SESSION['nom'];
+                         echo  $_SESSION['nom'];
                     }else{
-                         echo "Connection - Inscription";
+                         echo "Authentification";
                     }
                ?>
           </a>
