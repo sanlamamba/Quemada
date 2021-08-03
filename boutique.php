@@ -20,7 +20,7 @@
 					<breadcrumb>
 						<h6>Produit</h6>
 						<h6>></h6>
-						<h6>Homme</h6>
+						<h6><?php if(isset($_GET["filtre"])){ echo $_GET["filtre"]; }else { echo "tous"; } ?> </h6>
 					</breadcrumb>
 				</div>
 				<div class="col-12">

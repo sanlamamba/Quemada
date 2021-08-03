@@ -1,10 +1,22 @@
-
+/* LIGHT Colors */
+/* Dark Colors */
+/* Typography */
+/* Fonts */
 *, *::after, *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* border: 1px solid black; */
   transition: 0.3s ease;
+  font-family: "Souvenir", "Arial";
+  color: #202020;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+h1, h2 {
+  font-family: "Futura Bold", "Arial Rounded Mt Bold";
 }
 
 a {
@@ -25,81 +37,44 @@ a.no-clout {
   padding: 20px;
 }
 
-.button {
-  min-width: 200px;
-  font-size: 18px;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  color: #fcfcfc;
-}
-.button .btn-one {
-  bottom: 0;
-  background: transparent;
-  color: black;
-  font-weight: bold;
-}
-.button .filtersBtn {
-  min-width: 100px;
+a:hover {
+  color: #647DEE;
+  text-decoration: none;
 }
 
-.grided {
+#adminContainer {
+  height: 100vh;
+  width: 100vw;
   display: grid;
+  grid-template-columns: 300px 1fr;
 }
 
-.spacer {
-  height: 75px;
+/* Fonts */
+/* LIGHT Colors */
+/* Dark Colors */
+/* Typography */
+/* Fonts */
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  font-family: "Souvenir", "Arial";
+  color: #202020;
 }
 
-breadcrumb {
-  padding: 10px;
-  display: flex;
-  opacity: 0.6;
-}
-breadcrumb > * {
-  padding: 2px 10px;
+body {
+  background-color: #fcfcfc;
 }
 
-produit {
-  cursor: pointer;
-}
-produit #hoverImgCont {
-  overflow: hidden;
-}
-produit #hoverImgCont img {
-  width: 100%;
-}
-produit #hoverImgCont button {
-  position: relative;
-  margin-top: 0;
-  display: none;
-}
-produit #hoverImgCont:hover img {
-  transform: scale(1.1);
-}
-produit #hoverImgCont:hover button {
-  display: block;
-  margin-top: -50px;
-}
-produit #productProperty {
-  padding: 10px;
-}
-produit #productProperty .productWishlisht {
-  text-align: end;
+h1, h2 {
+  font-family: "Futura Bold", "Arial Rounded Mt Bold";
 }
 
-footer, .copyright {
-  padding: 70px 0px;
-  background: #202020;
-  color: azure;
-}
-
-.copyright {
-  border-top: 2px solid white;
-  padding: 5px 0px;
-}
-.copyright .center {
-  text-align: center;
+a {
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
 }
 
 section {
@@ -114,49 +89,102 @@ a.no-clout {
   padding: 20px;
 }
 
-header {
-  height: 50px;
-  z-index: 10;
-  padding: 10px;
-  width: 100vw;
-  background: #8080fa;
-}
-header #menuZone {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  color: #f0f0f0;
+a:hover {
+  color: #647DEE;
+  text-decoration: none;
 }
 
+#adminContainer {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+button, input[type=submit] {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+button .btn-primary, input[type=submit] .btn-primary {
+  background-color: #647DEE;
+  color: #fcfcfc;
+}
+button .filtersBtn, input[type=submit] .filtersBtn {
+  min-width: 100px;
+}
+
+.spacer {
+  height: 75px;
+}
+
+.adminMenu {
+  background-color: #202020;
+  color: #fcfcfc;
+  display: grid;
+  grid-template-rows: 50px 1fr 100px;
+}
+.adminMenu * {
+  color: white;
+}
+.adminMenu ul li {
+  padding: 5px 0px;
+}
+
+/* LIGHT Colors */
+/* Dark Colors */
+/* Typography */
+/* Fonts */
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  font-family: "Souvenir", "Arial";
+  color: #202020;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+h1, h2 {
+  font-family: "Futura Bold", "Arial Rounded Mt Bold";
+}
+
+a {
+  color: inherit;
+  list-style: none;
+  text-decoration: none;
+}
 
 section {
   min-height: 50vh;
 }
 
-#adminContainer {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  width: 100vw;
-  height: 100vh;
-}
-
-#adminContainer #adminScreen {
-  overflow-y: scroll;
+a.no-clout {
+  color: inherit;
+  text-decoration: inherit;
+  transform: scale(0.95);
+  height: 250px;
   padding: 20px;
 }
-.adminMenu{
-  background-color: #202020;
-  color: white;
+
+a:hover {
+  color: #647DEE;
+  text-decoration: none;
 }
 
-.container div .aboutImg img {
-  width: 90%;
-  overflow: hidden;
-  box-shadow: -20px 20px 2px 0px #5050ff20;
+#adminContainer {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 300px 1fr;
 }
 
 /* PLACEHOLDERS AND CLASSES */
-/* Colors */
+/* LIGHT Colors */
+/* Dark Colors */
 /* Typography */
 
 /*# sourceMappingURL=main.css.map */

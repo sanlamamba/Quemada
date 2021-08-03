@@ -1,6 +1,8 @@
 <header class="row mainHeader">
-     <div id="logoZone" class="col-2">
-          
+     <div  class="col-2">
+          <div id="logoZone t-end" class="row">
+               <img height="50px" src="./images/icons/logo1.png" alt="" srcset="">
+          </div>
      </div>
      <div id="menuZone" class="col-7">
           <a href="./" class="col">Accueil</a>

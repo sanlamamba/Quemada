@@ -15,6 +15,14 @@
                $result = $this->db->select($query);
                return $result;
           }
+          public function count_commande()
+          {    
+               $query = "SELECT count(*) as count from commande";
+               $result = $this->db->select($query);
+               foreach ($result as $data) {
+                    return $data;
+               }
+          }
           public function read_commande_status($status)
           {
                
@@ -26,6 +34,21 @@
           {
                
                $query = "SELECT * FROM commande LEFT JOIN client ON commande.id_client_commande = client.id_client WHERE commande.cart_id_commande='$cart' LIMIT 1";
+               $result = $this->db->select($query);
+               return $result;
+          }
+          public function read_commande_by_id($id)
+          {
+               
+               $query = "SELECT * FROM commande LEFT JOIN client ON commande.id_client_commande = client.id_client WHERE commande.id='$id' LIMIT 1";
+               $result = $this->db->select($query);
+               return $result;
+          }
+          
+          public function read_commande_by_client($client)
+          {
+               
+               $query = "SELECT * FROM commande LEFT JOIN client ON commande.id_client_commande = client.id_client WHERE commande.id_client_commande='$client'";
                $result = $this->db->select($query);
                return $result;
           }

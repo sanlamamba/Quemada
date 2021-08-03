@@ -1,14 +1,4 @@
-*,*::after,*::before{
-     padding: 0;
-     margin: 0;
-     box-sizing: border-box;
-     border: 1px solid black;
-     transition: 0.5s ease;
-}
-/* GENERAL */
-section{
-     min-height: 50vh;
-}
+
 a.no-clout{
      color: inherit;
      text-decoration: inherit;

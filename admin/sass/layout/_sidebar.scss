@@ -1,0 +1,13 @@
+.adminMenu{
+     background-color: $inverse-bg;
+     color: $bg-color;
+     display: grid;
+     grid-template-rows: 50px 1fr 100px;
+     & *{
+          color: white;
+     }
+     ul li{
+          padding: 5px 0px;
+     }
+
+}

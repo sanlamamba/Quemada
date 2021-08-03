@@ -15,6 +15,22 @@
                $result = $this->db->select($query);
                return $result;
           }
+          public function count_produits()
+          {    
+               $query = "SELECT count(*) as count from produits";
+               $result = $this->db->select($query);
+               foreach ($result as $data) {
+                    return $data;
+               }
+          }
+          
+          public function read_produits_categorie($cat)
+          {    
+               $query = "select * from produits left join categorie on produits.categorie = categorie.id_categorie where categorie.label = '$cat'";
+               $result = $this->db->select($query);
+               return $result;
+          }
+          
           public function read_produits_limit($count)
           {    
                $query = "select * from produits left join categorie on produits.categorie = categorie.id_categorie LIMIT $count";

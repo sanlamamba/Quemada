@@ -7,5 +7,5 @@
      echo $id_client;
      $panier_id = randStr();
      $_SESSION['panier']=$panier_id;
-     header("Location:/quemada/panier.php")
+     header("Location:/quemada/panier.php?checkout=true")
 ?>

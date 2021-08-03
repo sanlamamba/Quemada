@@ -11,20 +11,21 @@
 		<section id="adminScreen" class="container-fluid">
 			<div class="row spacer"></div>
 			<form class="row">
-				<h3 class="col-12">Liste des produits sur le liste</h3>
+				<h3 class="col-12 text-muted">Liste des commandes </h3>
 				<div class="col-3">Filtre :</div>
-				<div class="col-3"><a href="./liste_commande.php?filter=attente" class="row"><label class="col-8 btn btn-primary">En attente</label></a></div>
-				<div class="col-3"><a href="./liste_commande.php?filter=fini" class="row"><label class="col-8 btn btn-primary">Fini</label></a></div>
-				<div class="col-3"><a href="./liste_commande.php?filter=rejeter" class="row"><label class="col-8 btn btn-primary">Rejeter</label></a></div>
+				<div class="col-2"><a href="./liste_commande.php" class="row form-control">Tout</a></div>
+				<div class="col-2"><a href="./liste_commande.php?filter=attente" class="row form-control">En attente</a></div>
+				<div class="col-2"><a href="./liste_commande.php?filter=fini" class="row form-control">Fini</a></div>
+				<div class="col-2"><a href="./liste_commande.php?filter=rejeter" class="form-control row">Rejeter</a></div>
 				<div class="col-12">
 					<div class="row">
-						<table class="col-12">
+						<table class="table col-12">
 							<tr class="row">
 								<th class="col-1">ID</th>
 								<th class="col">Nom Client</th>
 								<th class="col">montant</th>
 								<th class="col">status</th>
-								<th class="col-1">Voir</th>
+								<th class="col-1"></th>
 							</tr>
 							<?php 
 								$data = $commande->read_commande();
@@ -43,7 +44,7 @@
 								<td class="col"><?php echo $datum['status_commande'] ?></td>
 								<td class="col-1">
 									<a href="./commande.php?commande=<?php echo $datum['id'] ?>" class="row">
-										<label class="col-8 btn btn-light">O</label>
+										&#128065;
 									</a>
 								</td>
 								

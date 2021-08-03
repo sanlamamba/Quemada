@@ -15,6 +15,14 @@
                $result = $this->db->select($query);
                return $result;
           }
+          public function count_clients()
+          {    
+               $query = "SELECT count(*) as count from client";
+               $result = $this->db->select($query);
+               foreach ($result as $data) {
+                    return $data;
+               }
+          }
 
           public function read_client_id($id)
           {    
@@ -39,6 +47,9 @@
                
                $query = "select * from client where mail_client = '$mail' and mdp_client = '$password'";
                $result = $this->db->select($query);
+               if(!is_iterable($result)){
+                    return false;
+               }
                foreach ($result as $data) {
                     return $data;
                }
@@ -68,32 +79,14 @@
           }
 
           // CREATE
-          public function update_produit($id,$data,$file)
-          {    
-               //CHANGE QUERY
-               $nom = $data['nom'];
-               $prix = $data['prix'];
-               $desc = $data['desc'];
-               $img = $data['img'];
-               $cat = $data['cat'];
-               $tag = 'produit';
-               $query = "UPDATE `produits` SET `nom_produit` = '$nom', `prix` = '$prix', `description` = '$desc', `img_produit` = '$img', `categorie` = '$cat', `tag` = '$tag' WHERE `produits`.`id` = $id; ";
-               $result = $this->db->update($query);
-               if ($result) {
-                    $msg = "<span class='success'>Succes</span>";
-                    return $msg;
-               } else {
-                    $msg = "<span class='error'>Echec</span>";
-                    return $msg;
-               }
-          }
+          
           
 
           // DELETE
-          public function delete_produit($id)
+          public function delete_client($id)
           {    
                //CHANGE QUERY
-               $query = "DELETE FROM `produits` WHERE `produits`.`id` = $id";
+               $query = "DELETE FROM `client` WHERE `client`.`id_client` = $id";
                $result = $this->db->delete($query);
                if ($result) {
                     $msg = "<span class='success'>Succes</span>";

@@ -6,6 +6,14 @@
           echo $del;
           header("Location:/quemada/admin/liste_produit.php");
      }
+
+     if(isset($_GET['delete_client'])){
+          $del = $client->delete_client($_GET['num']);
+          echo $del;
+          header("Location:/quemada/admin/liste_client.php");
+     }
+
+     
      if(isset($_GET['fini'])){
           $upda = $commande->finir_commande($_GET['id']);
           header("Location:/quemada/admin/liste_commande.php");

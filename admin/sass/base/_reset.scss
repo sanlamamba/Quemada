@@ -36,9 +36,9 @@ a:hover{
 	color: $primary-color;
 	text-decoration: none;
 }
-#mainContainer{
-	overflow-y: scroll;
+#adminContainer{
 	height: 100vh;
-	overflow-x: hidden;
 	width: 100vw;
+	display: grid;
+	grid-template-columns: 300px 1fr;
 }

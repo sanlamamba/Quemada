@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-	include("./components/head.php")
+	include("./components/head.php");
+	$countPor = $produit->count_produits();
+	$countCom = $commande->count_commande();
+	$countCli = $client->count_clients();
 ?>
 <body>
 	<div id="adminContainer">
@@ -10,39 +13,52 @@
 		?>
 		<section id="adminScreen" class="container-fluid">
 			<div class="row spacer"></div>
-			<form class="row">
-				<h3>Liste des clients</h3>
-				<div class="col-12">
-					<div class="row">
-						<table class="col-12">
-							<tr class="row">
-								<th class="col-1">ID</th>
-								<th class="col-3">Nom Client</th>
-								<th class="col">adresse</th>
-								<th class="col">mail</th>
-								<th class="col-2">Supprimer</th>
-							</tr>
+			<p class="text-muted">Bienvenue, <?php echo $_SESSION["pseudo"]; ?></p>
 
-							<!-- LOOP HERE -->
-							<tr class="row">
-								<td class="col-1">ID</td>
-								<td class="col-3">Paul Jean pierrre</td>
-								<td class="col">Liberte, Dakar</td>
-								<td class="col">juggernaut@gmail.com</td>
-								<td class="col-2">
-									<a href="#" class="row">
-										<button class="col-8 btn btn-light">O</button>
-									</a>
-								</td>
-								
-								
-							</tr>
-							<!-- END LOOP -->
-						</table>
-					
+			<h2 class="text-muted">&#12930; Tableau de bord</h2>
+			<div class="row">
+				<div class="form-control col">
+					<h4 class="row px-3">Nombre des produits</h4>
+					<div class="row px-3">
+						<h1>&#9814;</h1>
+						<h1><?php echo $countPor['count']; ?>+</h1>
 					</div>
 				</div>
-			</form>
+				<div class="form-control col">
+					<h4 class="row px-3">Nombre des commandes</h4>
+					<div class="row px-3">
+						<h1>&#9815;</h1>
+						<h1><?php echo $countCom['count']; ?>+</h1>
+					</div>
+				</div>
+				<div class="form-control col">
+					<h4 class="row px-3">Nombre des clients</h4>
+					<div class="row px-3">
+						<h1>&#9812;</h1>
+						<h1><?php echo $countCli['count']; ?>+</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-3">
+				<table class="table">
+					<tr>
+						<th class="text-muted">Liens important pour gerer le site</th>
+					</tr>
+					<tr>
+						<td><a href="/quemada/">&#9755; Page d'accueil Quemada</a></td>
+					</tr>
+					<tr>
+						<td><a href="/quemada/boutique.php">&#9755; Page boutique</a></td>
+					</tr>
+					<tr>
+						<td><a href="/quemada/about.php">&#9755; Page a propos</a></td>
+					</tr>
+					<tr>
+						<td><a href="/quemada/contact.php">&#9755; Page de contact</a></td>
+					</tr>
+					
+				</table>
+			</div>
 		</section>
 	</div>
 </body>

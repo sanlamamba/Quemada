@@ -37,8 +37,11 @@
           public function authenticate($mail,$password)
           {
                
-               $query = "select * from administrateur where mail = '$mail' and mdp = '$password'";
+               $query = "select * from administrateur where mail = '$mail' and mdp  = '$password'";
                $result = $this->db->select($query);
+               if(!is_iterable($result)){
+                    return false;
+               }
                foreach ($result as $data) {
                     return $data;
                }
@@ -67,41 +70,7 @@
                }
           }
 
-          // CREATE
-          public function update_produit($id,$data,$file)
-          {    
-               //CHANGE QUERY
-               $nom = $data['nom'];
-               $prix = $data['prix'];
-               $desc = $data['desc'];
-               $img = $data['img'];
-               $cat = $data['cat'];
-               $tag = 'produit';
-               $query = "UPDATE `produits` SET `nom_produit` = '$nom', `prix` = '$prix', `description` = '$desc', `img_produit` = '$img', `categorie` = '$cat', `tag` = '$tag' WHERE `produits`.`id` = $id; ";
-               $result = $this->db->update($query);
-               if ($result) {
-                    $msg = "<span class='success'>Succes</span>";
-                    return $msg;
-               } else {
-                    $msg = "<span class='error'>Echec</span>";
-                    return $msg;
-               }
-          }
-          
 
-          // DELETE
-          public function delete_produit($id)
-          {    
-               //CHANGE QUERY
-               $query = "DELETE FROM `produits` WHERE `produits`.`id` = $id";
-               $result = $this->db->delete($query);
-               if ($result) {
-                    $msg = "<span class='success'>Succes</span>";
-                    return $msg;
-               } else {
-                    $msg = "<span class='error'>Echec</span>";
-                    return $msg;
-               }
-          }
+          
           
      }

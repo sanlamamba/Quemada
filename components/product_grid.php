@@ -1,7 +1,12 @@
 <?php
      require_once("./backend/instances/instances.php");
      $data =$produit->read_produits();
-     
+     if(isset($_GET['filtre'])){
+          $data=$produit->read_produits_categorie($_GET["filtre"]);
+     }
+     if(!is_iterable($data)){
+          $data = array();
+     }
 ?>
           <div class="row" id="productGrid">
 

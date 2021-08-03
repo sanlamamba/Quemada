@@ -1,11 +1,11 @@
 footer,.copyright{
      padding: 70px 0px;
-     background: #202020;
-     color: azure;
+     background: $bg-color;
+     color: $inverse-bg;
      
 }
 .copyright{
-     border-top: 2px solid white;
+     border-top: 2px solid $primary-color;
      .center{
           text-align: center;
      }

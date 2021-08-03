@@ -2,8 +2,19 @@
 <html lang="en">
 <?php
 	include("./components/head.php");
-     $data_panier = $panier->read_cart($_SESSION['panier']);
-     // echo $_SESSION['panier'];
+     $data_panier = null;
+     if(isset($_SESSION['panier'])){
+          $data_panier = $panier->read_cart($_SESSION['panier']);
+
+     }else{
+          header('Location: /quemada/authentification.php');
+
+     }
+     if(isset($_GET['checkout'])){
+          echo "<script> alert('Votre commande a ete pris en compte, vous pouvez voir sa progression sur la page COMPTE') </script>";
+
+     }
+     
 ?>
 <body>
 	<div id="mainContainer" class="container-fluid">
@@ -54,7 +65,6 @@
                          <button class="btn btn-secondary"> Abandonner la commande</button>
                     </div>
                     <div class="col-6">
-                         <input type="text" value="<?php echo array_sum($total_array) ?>" name="total" class="" id="total">
                          <a href="./panier/checkout.php?total=<?php echo array_sum($total_array)?>&panier=<?php echo $_SESSION['panier']?>&id_client=<?php echo $_SESSION['id']?>"><button class="btn btn-primary"> Finaliser la commande</button></a>
                     </div>
                </div>

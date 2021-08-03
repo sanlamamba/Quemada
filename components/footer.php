@@ -34,7 +34,7 @@
                     </h5>
                     <a href="tel:+221332654812">+221 33 265 48 12</a>
                     <a href="mailto:contact@quemada.com">contact@quemada.com</a>
-                    <a href="./contact.php"><label class="btn btn-dark m-2">Nous contacter</label></a>
+                    <a href="./contact.php"><label class="btn btn-light m-2">Nous contacter</label></a>
                </div>
                
           </div>
@@ -43,6 +43,6 @@
 </footer>
 <div class="row copyright">
      <div class="col-4 center">Copyright @ 2021 Quemada</div>
-     <div class="col-4 center">Powered by Dra.po</div>
-     <div class="col-4"></div>
+     <div class="col-4 text-center">Powered by Dra.po</div>
+     <!-- <div class="col-4 text-right"><a href="#mainCointainer">Retour en haut </a></div> -->
 </div>

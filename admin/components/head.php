@@ -11,6 +11,9 @@
 
 	<link rel="stylesheet" href="./style/main.css">
 
+	<link rel="stylesheet" href="./css/all.min.css">
+
+
 </head>
 <?php
 session_start();

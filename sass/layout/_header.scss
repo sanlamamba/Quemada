@@ -12,17 +12,24 @@ header{
      color: $inverse-bg;
      opacity: 1;
      transition: 0.6s ease-in;
-     
+     align-items: center;
+
      #menuZone{
           display: flex;
           align-items: center;
           font-weight: bold;
           
      }
-     &:hover{
-          background:$inverse-bg;
-          color: $bg-color;
+     #logoZone{
+          h2{
+               font-size: 20px;
+          }
      }
+     // NOT WORKING
+     // &:hover{
+     //      background:$inverse-bg;
+     //      color: $bg-color;
+     // }
      &.headerTwo{
           transform: translateY(-30%);
           position: fixed;

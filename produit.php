@@ -59,7 +59,7 @@
                               <label class="col-3">ID :</label>
                               <h5 class="col-9"><?php echo $data['id'] ?></h5>
                               <label class="col-6">Nombre a ajouter :</label>
-                              <input name="quantite" type="number" require value="1" class="col-6"></input>
+                              <input name="quantite" type="number" require value="1" class="form-control col-6"></input>
                               <input name="id_prod" type="text" value="<?php echo $data["id"]?>" required class="col-12 idProd" />
                               <input name="cart_id" type="text" value="<?php echo $_SESSION["panier"]?>" required class="col-12 idProd" />
                               <input name="panier_btn" type="submit" value="Ajouter au panier" class='col--8 btn btn-primary'>

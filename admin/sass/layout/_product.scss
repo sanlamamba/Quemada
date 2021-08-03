@@ -1,0 +1,27 @@
+.produit{
+     
+     .hoverImgCont{
+          overflow: hidden;
+          img{
+               width: 100%;
+          }
+          button{
+               position: relative;
+               margin-top: 0;
+               display: none;
+          }
+          &:hover img{
+               transform: scale(1.1);
+          }
+          &:hover button{
+               display: block;
+               margin-top: -50px;
+          }
+     }
+     .productProperty{
+          padding: 10px;
+     }
+}
+.idProd{
+     display: none !important;
+}

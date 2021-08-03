@@ -15,36 +15,43 @@
 		?>
 		<section id="adminScreen" class="container-fluid">
 			<div class='row'>
-				<form action="" method="post" enctype="multipart/form-data" class="col-12">
+				<form action="" method="post" enctype="multipart/form-data" class="form-control col-12">
 					<h2 class="row p-3">Ajouter un produit</h2>
-					<div class="row p-2">
-						<label for="nom" class="col-4">Nom du produit</label>
-						<input class="input col-4" type="text" id="nom" name="nom" require >
-					</div>
-					<div class="row p-2">
-						<label for="prix" class="col-4">Prix du produit</label>
-						<input class="input col-4" type="number" id="prix" name="prix" require >
-					</div>
-					<div class="row p-2">
-						<label for="categorie" class="col-4">Categorie du produit</label>
-						<select name="cat">
-							<option value="null">Choisir la categorie</option>
-							<option value="1">Ordinateur</option>
-							<option value="2">Telephone</option>
-							<option value="3">Autre</option>
-						</select>
-					</div>
-					<div class="row p-2">
-						<label for="image" class="col-4">Image du produit</label>
-						<input class="col-4" id="img" name='img' type="file"/>
-					</div>
-					<div class="row p-2">
-						<label for="description" class="col-4">Description du produit</label>
-						<textarea name="desc" id="desc" class='col-4 h-5'></textarea>
-					</div>
-					<div class='row'>
-						<button class="col-2 btn btn-danger">Annuler</button>
-						<input name="submit" type="submit" class="col-2 btn btn-primary" value="valider">
+					<div class="row">
+						
+						<div class="col-6">
+							<div class="form-group">
+								<label for="nom">Nom du produit</label>
+								<input class="form-control col-11" type="text" id="nom" name="nom" required >
+							</div>
+							<div class="form-group">
+								<label for="prix" >Prix du produit</label>
+								<input class="form-control col-11" type="number" id="prix" name="prix" required >
+							</div>
+							<div class="form-group">
+								<label for="categorie" class="">Categorie du produit</label>
+								<select class="form-control col-11" name="cat">
+									<option value="null">Choisir la categorie</option>
+									<option value="1">Ordinateur</option>
+									<option value="2">Telephone</option>
+									<option value="3">Autre</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<label for="image">Image du produit</label>
+								<input class="form-control col-11" id="img" name='img' type="file"/>
+							</div>
+							<div class="form-group">
+								<label for="description">Description du produit</label>
+								<textarea name="desc" id="desc" class='form-control col-11 h-10'></textarea>
+							</div>
+							<div class='row'>
+								<button class="col-2 btn btn-danger">Annuler</button>
+								<input name="submit" style="height: 40px;" type="submit" class="col-2 btn btn-primary" value="valider">
+							</div>
+						</div>
 					</div>
 				</form>
 			</div>
